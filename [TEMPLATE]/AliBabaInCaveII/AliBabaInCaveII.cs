@@ -108,34 +108,7 @@ namespace Problem
                 }
             }
 
-            /*
-             
-            int maxProfit = dp[itemsCount, camelsLoad];
-            List<Tuple<int, int>> solutionList = new List<Tuple<int, int>>();
-            int i = itemsCount;
-            int j = camelsLoad;
-
-            for (; i > 0 && j > 0; i--)
-            {
-                if (dp[i, j] == dp[i-1, j])
-                {
-                    continue;
-                }
-                else
-                {
-                    for (int k = 1; k <= instances[i]; k++)
-                    {
-                        if (j >= k * weights[i] && dp[i, j] == k * profits[i] + dp[i-1, j-k*weights[i]])
-                        {
-                            solutionList.Add(new Tuple<int, int>(i, k));
-                            j -= k * weights[i];
-                            break;
-                        }
-                    }
-                }
-            }
-             
-             */
+            
 
             if (solutionList.Count == 0)
             {
